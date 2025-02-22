@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"><span class="colortext">Photo</span> Gallery</h1>
+        <hr>
+        <ul class="photo-categories">
+            <li><a href="index.html">All</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="nature.html">Food</a></li>
+            <li><a href="nature.html">People</a></li>
+            <li><a href="nature.html">Art</a></li>
+            <li><a href="nature.html">Travel</a></li>
+        </ul>
+    </header>
+    <section class="photos-grid">
+        <img src="img/1.PNG">
+        <img src="img/2.jpg">
+        <img src="img/3.jpg">
+    </section>
+    <div class="photo-opened-overlay">
+        <button class="close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                <path
+                    d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z">
+                </path>
+            </svg>
+        </button>
+        <div class="switch-buttons">
+            <button class="arrow-button back">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                    <path d="M168.49,199.51a12,12,0,0,1-17,17l-80-80a12,12,0,0,1,0-17l80-80a12,12,0,0,1,17,17L97,128Z">
+                    </path>
+                </svg>
+            </button>
+            <button class="arrow-button next">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                    <path
+                        d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="photo-opened">
+            <img src="img/1.PNG">
+        </div>
+    </div>
+    <script src="js/master.js"></script>
+</body>
+
+</html>
